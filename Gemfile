@@ -34,7 +34,7 @@ gem 'strip_attributes', '~> 1.9'
 gem 'valid_email', '~> 0.1.3'
 gem 'active_storage_validations', '~> 0.8.5'
 gem 'jwt', '~> 2.2', '>= 2.2.1'
-gem 'secure_headers', '~> 6.3', '>= 6.3.1'
+# gem 'secure_headers', '~> 6.3', '>= 6.3.1'
 gem 'rack-cors'
 
 gem 'browser', '~> 4.2'
