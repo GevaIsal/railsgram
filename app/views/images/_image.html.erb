@@ -1,6 +1,6 @@
 <div class="col">
   <figure class="figure">
-    <img src="https://pbs.twimg.com/media/EdWY4mhXgAA4pfr.jpg" class="figure-img img-fluid rounded">
+    <%= image_tag image.picture.medium.url, class: 'figure-img img-fluid rounded'%>
     <figcaption class="figure-caption">
       <%= image.description %>
       <%= link_to 'Editar', edit_image_path(image)  %>

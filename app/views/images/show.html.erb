@@ -4,7 +4,8 @@
     <div class="card card-fluid">
       <h3 class="card-header"> ELEMENTO RECIEN CREADO => mejorar show.html.erb</h3>
       <div class="card-body">
-        <p>Description del Elemento => <%= @image.description %></p><% link_to image_path %>
+        <p>Description del Elemento: <%= @image.description %></p>
+        <%= image_tag @image.picture.medium.url, class: 'figure-img img-fluid rounded'%>
       </div>
       <div class="card-footer text-right">
         <span class="mx-1"></span>

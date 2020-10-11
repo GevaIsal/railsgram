@@ -22,7 +22,7 @@ class ImagesController < ApplicationController
   def create
     @image = Images::CreateImage.new(images_params).save
     if @image.persisted?
-      redirect_to @image
+      redirect_to images_path
     else
       render :new
     end
@@ -48,6 +48,6 @@ class ImagesController < ApplicationController
   end
 
   def images_params
-    params.require(:image).permit(:description)
+    params.require(:image).permit(:description, :picture)
   end
 end
