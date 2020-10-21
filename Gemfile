@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+gem 'devise'
 gem 'bootstrap', '~> 5.0.0.alpha1'
 gem 'carrierwave'
 gem 'jquery-rails'

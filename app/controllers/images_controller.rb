@@ -9,6 +9,7 @@ class ImagesController < ApplicationController
 
   def index
     @images = Image.all
+    # @images = Image.where user_id: current_user.id
   end
 
   def show; end
@@ -20,6 +21,8 @@ class ImagesController < ApplicationController
   def edit; end
 
   def create
+
+    @image = current_user.images.new(images_params).save
     @image = Images::CreateImage.new(images_params).save
     if @image.persisted?
       redirect_to images_path
